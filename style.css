@@ -1,0 +1,14 @@
+form {
+  width: 50%;
+  height: 200px;
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;
+}
+
+#result{
+  text-align: center;
+  color: green;
+}
