@@ -4,9 +4,7 @@
 
     <meta charset="utf-8">
     <title>BMI Calculator</title>
-    <!--link rel="stylesheet" href="style.css"-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <script src="src/person.js"></script>
     <script src="src/bmi_calculator.js"></script>
     <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
@@ -30,25 +28,20 @@
     });
   });
 </script>
-  <body class="container">
-    <div class="row">
-      <div class="col-sm-12">
+  <body>
       <form>
         <h1>BMI Calculator</h1>
-        <b>Weight</b>: <input type="text" id="weight" placeholder="Please enter your weight"><br /><br />
-        <b>Height</b>: <input type="text" id="height" placeholder="Please enter your height"><br /><br />
+        <b>Weight</b>: <input type="number" min="1" id="weight" style="width: 50px; height: 20px;"><br /><br />
+        <b>Height</b>: <input type="number" min="1" id="height" style="width: 50px; height: 20px;"><br /><br />
         <select id="calculationMethod"><br /><br />
           <option value="metric" selected="">Metric</option>
           <option value="imperial">Imperial</option>
         </select><br /><br />
-        <input type="button" class="Button" id="calculate" value="Calculate">
-      </form>
-      <br /><br />
-      <div id="display">
-        <span id="display_value"></span>
-        <span id="display_message"></span>
-      </div>
-    </div>
+        <input type="button" id="calculate" value="Calculate">
+      </form><br /><br />
+    <div id="display" style="color:green;">
+      <span id="display_value"></span>
+      <span id="display_message"></span>
     </div>
   </body>
 </html>
