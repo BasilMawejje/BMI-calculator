@@ -1,5 +1,5 @@
 function BMICalculator(){
-}
+};
 
 BMICalculator.prototype.metric_bmi = function(obj) {
   var weight = obj.weight;
@@ -10,6 +10,7 @@ BMICalculator.prototype.metric_bmi = function(obj) {
     setBMIMessage(obj);
   }
 };
+
 BMICalculator.prototype.imperial_bmi = function(obj) {
   var weight = obj.weight;
   var height = obj.height;
