@@ -8,6 +8,8 @@
     <script src="src/person.js"></script>
     <script src="src/bmi_calculator.js"></script>
     <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   </head>
   <script type="text/javascript">
   $(document).ready(function () {
@@ -26,6 +28,7 @@
       $('#weight').val('');
       $('#height').val('');
     });
+    //$('select').material_select();
   });
 </script>
   <body>
@@ -33,11 +36,11 @@
         <h1>BMI Calculator</h1>
         <b>Weight</b>: <input type="number" min="1" id="weight" style="width: 50px; height: 20px;"><br /><br />
         <b>Height</b>: <input type="number" min="1" id="height" style="width: 50px; height: 20px;"><br /><br />
-        <select id="calculationMethod"><br /><br />
+        <select id="calculationMethod" class="browser-default"><br /><br />
           <option value="metric" selected="">Metric</option>
           <option value="imperial">Imperial</option>
         </select><br /><br />
-        <input type="button" id="calculate" value="Calculate">
+        <input type="button" id="calculate" class="waves-effect waves-light btn" value="Calculate">
       </form><br /><br />
     <div id="display" style="color:green;">
       <span id="display_value"></span>
